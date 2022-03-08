@@ -67,7 +67,7 @@ function App() {
     console.log('making POST request...');
     fetch('https://zbgay4ai06.execute-api.us-east-1.amazonaws.com/220307_Version_0/', {
       method: 'POST',
-      headers: { "Content-Type": "application/json", "Accept": "image/png" },
+      headers: { "Content-Type": "application/json", "Accept": "text/plain" },
       body: JSON.stringify({ "image": inputFileData })
     }).then(response => response.json())
     .then(data => {
@@ -106,7 +106,10 @@ function App() {
       </div>
       <div className="Output">
         <h1>Results</h1>
-        <p>{outputFileData}</p>
+        <!-- 
+        <p>{outputFileData}</p> 
+        -->
+        <img src=outputFileData alt="Your Result" width="500" height="600"> 
       </div>
     </div>
   );
