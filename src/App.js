@@ -106,6 +106,7 @@ function App() {
           <li>Press the Brwose button</li>
           <li>Select an image</li>
           <li>Press the Submit button</li>
+          <li>Wait until the result is loaded and displayed. This can take a few seconds.</li>
         </ol> 
         <form onSubmit={handleSubmit}>
           <input type="file" accept=".png, .jpg, .jpeg" onChange={handleChange} />
