@@ -103,10 +103,11 @@ function App() {
         <p>This is an interactive App to estimate the age and gender of one or more persons based on their faces. </p>
         <h2>Instructions</h2>
         <ol>
-          <li>Press the Brwose button</li>
+          <li>Press the Browse button</li>
           <li>Select an image</li>
           <li>Press the Submit button</li>
           <li>Wait until the result is loaded and displayed. This can take a few seconds.</li>
+          <li>After the result has been displayed, you can start from the first step again.</li>
         </ol> 
         <form onSubmit={handleSubmit}>
           <input type="file" accept=".png, .jpg, .jpeg" onChange={handleChange} />
