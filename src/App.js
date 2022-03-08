@@ -106,7 +106,7 @@ function App() {
       </div>
       <div className="Output">
         <h1>Results</h1>
-        <p>{outputFileData}</p> 
+        <img src={outputFileData} alt="" /> 
       </div>
     </div>
   );
