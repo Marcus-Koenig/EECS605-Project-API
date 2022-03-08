@@ -99,14 +99,21 @@ function App() {
   return (
     <div className="App">
       <div className="Input">
-        <h1>Input</h1>
+        <h1>Age and Gender estimation by Marcus Koenig</h1>
+        <p>This is an interactive App to estimate the age and gender of one or more persons based on their faces. </p>
+        <h2>Instructions</h2>
+        <ol>
+          <li>Press the Brwose button</li>
+          <li>Select an image</li>
+          <li>Press the Submit button</li>
+        </ol> 
         <form onSubmit={handleSubmit}>
           <input type="file" accept=".png, .jpg, .jpeg" onChange={handleChange} />
           <button type="submit" disabled={buttonDisable}>{buttonText}</button>
         </form>
       </div>
       <div className="Output">
-        <h1>Results</h1>
+        <h2>Results</h2>
         <img src={outputFileData} alt="" /> 
       </div>
     </div>
