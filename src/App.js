@@ -104,7 +104,7 @@ function App() {
         <h2>Instructions</h2>
         <ol>
           <li>Press the Browse button</li>
-          <li>Select an image</li>
+          <li>Select an image which is smaller than 1MB</li>
           <li>Press the Submit button</li>
           <li>Wait until the result is loaded and displayed. This can take a few seconds.</li>
           <li>After the result has been displayed, you can start from the first step again.</li>
