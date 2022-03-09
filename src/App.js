@@ -1,6 +1,16 @@
 import './App.css';
 import React from 'react';
 
+<head>
+<style>
+img.result {
+  height: auto;
+  width: 80%;
+}
+</style>
+</head>
+
+
 // atob is deprecated but this function converts base64string to text string
 const decodeFileBase64 = (base64String) => {
   return "data:image/png;base64," + base64String
@@ -116,7 +126,7 @@ function App() {
       </div>
       <div className="Output">
         <h2>Results</h2>
-        <img src={outputFileData} alt="" /> 
+        <img class="result" src={outputFileData} alt="" /> 
       </div>
     </div>
   );
