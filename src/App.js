@@ -31,7 +31,7 @@ function App() {
 
   // make GET request to get demo files on load -- takes a second to load
   React.useEffect(() => {
-    fetch(DROPDOWN_API_ENDPOINT)
+    fetch(DROPDOWN_API_ENDPOINT, {method: 'POST'})
     .then(response => response.json())
     .then(data => {
       // GET request error
