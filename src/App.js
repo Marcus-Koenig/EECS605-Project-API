@@ -2,8 +2,8 @@ import './App.css';
 import React from 'react';
 
 // global variables to change where necessary
-const DROPDOWN_API_ENDPOINT = '<todo>'; // TODO
-const ML_API_ENDPOINT = '<todo>'; // TODO
+const DROPDOWN_API_ENDPOINT = 'https://86frl2gs33.execute-api.us-east-1.amazonaws.com/Version_0/'; // TODO
+const ML_API_ENDPOINT = 'https://axu6nhrs7i.execute-api.us-east-1.amazonaws.com/220314_Version_0/'; // TODO
 
 
 // atob is deprecated but this function converts base64string to text string
