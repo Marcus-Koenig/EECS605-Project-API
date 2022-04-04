@@ -96,7 +96,7 @@ function App() {
 
     // temporarily disable submit button
     setButtonDisable(true);
-    setButtonText('Loading Result');
+    setSubmitButtonText('Loading Result');
 
     // make POST request
     console.log('making POST request...');
@@ -123,7 +123,7 @@ function App() {
 
       // re-enable submit button
       setButtonDisable(false);
-      setButtonText('Submit');
+      setSubmitButtonText('Submit');
     })
     .then(() => {
       console.log('POST request success');
@@ -188,7 +188,7 @@ function App() {
         <form onSubmit={handleSubmit}>
           <label htmlFor="file-upload">{fileButtonText}</label>
           <input type="file" accept=".png, .jpg, .jpeg" id="file-upload" onChange={handleChange} />
-          <button type="submit" disabled={buttonDisable}>{buttonText}</button>
+          <button type="submit" disabled={buttonDisable}>{submitButtonText}</button>
         </form>
       </div>
       <div className="Output">
