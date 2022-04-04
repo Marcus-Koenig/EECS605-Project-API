@@ -42,6 +42,8 @@ function App() {
       // GET request success
       else {
         const s3BucketFiles = JSON.parse(data.body);
+        console.log('Detected Files: ');
+        console.log(s3BucketFiles);
         setDemoDropdownFiles(s3BucketFiles["s3Files"]);
       }
     });
