@@ -176,8 +176,7 @@ function App() {
         <p>This is an interactive App to estimate the age and gender of one or more persons based on their faces. </p>
         <h2>Instructions</h2>
         <ol>
-          <li>Press the Browse button</li>
-          <li>Select an image which is smaller than 1MB</li>
+          <li>Upload an image whis is smaller than 1MB or choose one of the demo files</li>
           <li>Press the Submit button</li>
           <li>Wait until the result is loaded and displayed. This can take a few seconds.</li>
           <li>After the result has been displayed, you can start from the first step again.</li>
